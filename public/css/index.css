@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #6200ff, #ff3300);
+    height: 60vh;
+}
+
+.info{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #131313;
+    padding: 25px 50px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+#form input {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 350px;
+    height: 45px;
+    padding: 5px;
+}
+
+#form input:focus{
+    box-shadow: 0px 0px 10px #1b60b9;
+}
+
+#form button {
+    cursor: pointer;
+    border: none;
+    background-color: #2376e2;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    transition: all 0.5s;
+}
+
+#form button:hover {
+    background-color: #2c87ff;
+    transform: translateY(-3px);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ececec;
+    gap: 10px;
+    padding: 40px;
+} 
+
+
+#lista {
+    background: white;
+    padding: 25px 70px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px #0002;
+}
+
+#lista {
+    flex: 1;
+    min-width: 0;
+}
+
+
+#usuarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.caixa {
+    /* width: fit-content; */
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0001;
+    overflow-wrap: anywhere;
+}
+
+.caixa h3 {
+    margin-top: 0;
+    color: #087fe7;
+}
+
+.caixa p {
+    color: #555;
+}
+
+.but button{
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 18px;
+    margin-top: 10px;
+    padding: 8px 25px;
+    font-size: 15px;
+}
+
+.editar {
+    background-color: #858585;
+    transition: all 0.5s;
+}
+
+.excluir {
+    background-color: #6b00e6;
+    transition: all 0.5s;
+}
+
+.excluir:hover {
+    background-color: #8d43ee;
+    transform: translateY(-5px);
+}
+
+.editar:hover {
+    background-color: #c7c7c7;
+    transform: translateY(-5px);
+}
