@@ -76,15 +76,14 @@ async function excluir(id) {
 
 
 async function editar(id, novoNome, novaIdade, novoTelefone) {
-    const nome = prompt('Novo Nome:', novoNome);
-    const idade = prompt('Nova Idade:', novaIdade); 
-    const telefone = prompt('Novo Telefone', novoTelefone);
+    const nome = prompt('Novo nome:', novoNome);
+    const idade = prompt('Nova idade:', novaIdade);
+    const telefone = prompt('novo telefone:', novoTelefone)
 
     if(
         nome === null ||
         idade === null ||
         telefone === null
-    
     ){
         return
     }
@@ -96,7 +95,7 @@ async function editar(id, novoNome, novaIdade, novoTelefone) {
     }
 
     await fetch(`http://localhost:3000/user/${id}`, {
-        method: 'PUT',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
